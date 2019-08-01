@@ -1,0 +1,45 @@
+//
+//  MusicAlbum.cpp
+//  PartA
+//
+//  Created by Burak Korkmaz on 19.11.2018.
+//  Copyright © 2018 Burak Korkmaz. All rights reserved.
+//
+
+#include "SimpleMusicAlbum.h"
+
+MusicAlbum::MusicAlbum(const string maArtist,
+                       const string maTitle,
+                       const int maYear){
+    artist = maArtist;
+    title = maTitle;
+    year = maYear;
+    
+}
+
+MusicAlbum::~MusicAlbum(){
+}
+
+MusicAlbum::MusicAlbum(const MusicAlbum &maToCopy){
+    artist = maToCopy.artist;
+    title = maToCopy.title;
+    year = maToCopy.year;
+}
+
+void MusicAlbum::operator=(const MusicAlbum &right){
+    artist = right.artist;
+    title = right.title;
+    year = right.year;
+}
+
+string MusicAlbum::getMusicAlbumArtist(){
+    return artist;
+}
+
+string MusicAlbum::getMusicAlbumTitle(){
+    return title;
+}
+
+int MusicAlbum::getMusicAlbumYear(){
+    return year;
+}
