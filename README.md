@@ -15,4 +15,4 @@ Now, Part A is to be extended such that each music album has a list of songs. Th
 
 © Burak Korkmaz, Bilkent University Computer Science
 
-Licenced under the [MIT Licence](LICENCE).
+Licenced under the [MIT Licence](LICENSE).
